@@ -39,7 +39,10 @@
         }
 
         @media(min-width: 992px) {
-            #myCarousel {
+
+            #myCarousel,
+            #cccard,
+            #map {
                 height: 100vh;
             }
         }
@@ -48,6 +51,7 @@
 </head>
 
 <body>
+    <!-- nav標題 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75 ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">泰山咖啡莊園</a>
@@ -82,7 +86,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- 輪播 -->
     <section id="myCarousel">
         <div id="kaifu" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
             <div class="carousel-indicators">
@@ -113,9 +117,10 @@
             </button>
         </div>
     </section>
+    <!-- 卡片 -->
     <section id="cccard">
-        <div class="container vh-100">
-            <div class="row d-flex align-items-center h-100 ">
+        <div class="container h-100 d-flex">
+            <div class="row align-items-center">
                 <div class="col-sm-4 mt-3">
                     <div class="card">
                         <img src="https://picsum.photos/800/500/?random=1" class="card-img-top">
@@ -155,7 +160,53 @@
             </div>
         </div>
     </section>
-
+    <!-- 圖文1 -->
+    <section id="p">
+        <div class="card mb-0" style="height: 100%;">
+            <div class="row m-0 bg-light" style="height: 100%;">
+                <div class="col-lg-6" style="padding: 0;">
+                    <img src="https://picsum.photos/1920/1080/?random=10" style="height: 100%;"
+                        class="img-fluid rounded-start">
+                </div>
+                <div class="col-lg-6 m-auto text-center" style="padding: 0;">
+                    <div class="card-body">
+                        <h5 class="card-title display-6">Card title</h5>
+                        <p class="card-text">
+                            是以兩個不願意走出為你他對機關表達有限責任之下女朋友，盯着計算，你怎不來他還培養眼中加入附件從來沒像素較大最高節目治理和我，情形情況一步是怎麼策劃不要收藏網際網路藍色，趨勢她是電信監督維護屏東外掛為。
+                        </p>
+                        <button type="button" class="btn btn-success">VIEW COLLECTION</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 圖文2 -->
+    <section id="p2">
+        <div class="card mb-0" style="height: 100%;">
+            <div class="row m-0 bg-light" style="height: 100%;">
+                <div class="col-lg-6 m-auto text-center order-lg-0 order-1" style="padding: 0;">
+                    <div class="card-body">
+                        <h5 class="card-title display-6">Card title</h5>
+                        <p class="card-text">
+                            是以兩個不願意走出為你他對機關表達有限責任之下女朋友，盯着計算，你怎不來他還培養眼中加入附件從來沒像素較大最高節目治理和我，情形情況一步是怎麼策劃不要收藏網際網路藍色，趨勢她是電信監督維護屏東外掛為。
+                        </p>
+                        <button type="button" class="btn btn-success">VIEW COLLECTION</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 order-0" style="padding: 0;">
+                    <img src="https://picsum.photos/1920/1080/?random=1" class="img-fluid rounded-start"
+                        style="height: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="map w-100 h-100">
+            <iframe class="w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.697484373922!2d121.41692282611332!3d25.044338437873755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1701736377913!5m2!1szh-TW!2stw"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
     <!-- 2. 引入 bootstrap.bundle.js 才可以使用元件 -->
     <script src="./js/bootstrap.bundle.js"></script>
