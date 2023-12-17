@@ -42,8 +42,29 @@
 
             #myCarousel,
             #cccard,
-            #map {
+            #map,
+            #p,
+            #p2,
+            #map,
+            #form {
                 height: 100vh;
+            }
+        }
+
+        @media(max-width:992px) {
+            #map {
+                position: relative;
+                padding-bottom: 75%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            #map iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
             }
         }
     </style>
@@ -157,6 +178,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -190,7 +212,7 @@
                         <p class="card-text">
                             是以兩個不願意走出為你他對機關表達有限責任之下女朋友，盯着計算，你怎不來他還培養眼中加入附件從來沒像素較大最高節目治理和我，情形情況一步是怎麼策劃不要收藏網際網路藍色，趨勢她是電信監督維護屏東外掛為。
                         </p>
-                        <button type="button" class="btn btn-success">VIEW COLLECTION</button>
+                        <button type="buttony" class="btn btn-success">VIEW COLLECTION</button>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1 order-0" style="padding: 0;">
@@ -200,6 +222,7 @@
             </div>
         </div>
     </section>
+    <!-- map -->
     <section id="map">
         <div class="map w-100 h-100">
             <iframe class="w-100 h-100"
@@ -208,6 +231,105 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+    <!-- form -->
+    <section id="form" class="bg-light d-flex align-items-center">
+        <div class=" container text-center mb-5 mt-5">
+            <h1 class="pt-8">聯絡我們</h1>
+            <p class="fs-4">泰山咖啡莊園，傳承熱情 coding 精神</p>
+            <p>任何服務問題或建議，歡迎您透過客服表單告訴我們，謝謝!</p>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col text-start col-lg-6 col-12">
+                    <label class="form-label">姓名</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control">
+                        <div class="input-group-text">
+                            先生<input class="form-check-input mt-0 me-2" type="radio" value="" name="sex">
+                            女士<input class="form-check-input mt-0" type="radio" value="" name="sex">
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-start col-lg-6 col-12">
+                    <label class="form-label">電話</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-12 text-start">
+                    <div class="mb-3">
+                        <label class="form-label">電子信箱</label>
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-12 text-start">
+                    <label class="form-label">問題類型</label>
+                    <select class="form-select">
+                        <option selected>餐飲建議</option>
+                        <option value="1">服務品質</option>
+                        <option value="2">環境滿意度</option>
+                        <option value="3">其他</option>
+                    </select>
+                </div>
+                <div class="col col-12 text-start">
+                    <div class="mb-3">
+                        <label class="form-label">意見需求</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="col text-start">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="information">
+                        <label class="form-check-label" for="information">
+                            訂閱泰山莊園最新資訊
+                        </label>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-secondary" type="submit">送出</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="info" class="w-100 h-50 bg-dark">
+        <div class="container p-5 text-light">
+            <div class="row lh-sm">
+                <div class="col-6 col-lg-3">
+                    <img src="https://picsum.photos/200/200/?random=10" class="rounded-circle w-50">
+                </div>
+                <div class="col-6 col-lg-3 pt-5 pt-lg-0">
+                    <p class="fw-bolder">Address</p>
+                    <p>
+                        1234 Street Name
+                        <br>
+                        City,AA 99999
+                    </p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="fw-bolder">Links</p>
+                    <p>
+                        Website builder
+                        <br>
+                        Download for Windows
+                        <br>
+                        Download for Mac
+                    </p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="fw-bolder">Contacts</p>
+                    <p>
+                        Email:support@mobirise.com
+                        <br>
+                        Phone:+1 (0) 000 0000 001
+                        <br>
+                        Fax:+1 (0) 000 000 002
+                </div>
+                <div class="col-12 text-center">
+                    &copy;Copyright 2023 I-Ping Ho - All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- 2. 引入 bootstrap.bundle.js 才可以使用元件 -->
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
